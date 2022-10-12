@@ -1,8 +1,16 @@
-a = int(input('Введите первый катет: '))
-b = int(input('Введите второй катет: '))
-s = a * b / 2
-c = (a**2+b**2)**0.5
-p = a+b+c
-print('Площадь:', s)
-print('Периметр:', p)
+from random import randint
 
+
+n1 = int(input("Укажите размерность массива A: "))
+n2 = int(input("Укажите размерность массива B: "))
+A = [0] * n1
+B = [0] * n2
+for i in range(n1):
+    A[i] = randint(-10, 10)
+for i in range(n2):
+    B[i] = randint(-10, 10)
+print(A,B)
+for i in A:
+    if i in B:
+        print(i)
+    
