@@ -1,16 +1,17 @@
-from random import randint
-
-
-n1 = int(input("Укажите размерность массива A: "))
-n2 = int(input("Укажите размерность массива B: "))
-A = [0] * n1
-B = [0] * n2
-for i in range(n1):
-    A[i] = randint(-10, 10)
-for i in range(n2):
-    B[i] = randint(-10, 10)
-print(A,B)
-for i in A:
-    if i in B:
-        print(i)
+def funct(n):
+    m = [0] * n
+    print("Введите", n, "чисел / числа: ")
+    index = 100000
+    mmax = -100000000
+    for i in range(n):
+        m[i] = float(input())
+        if m[i] > mmax:
+            mmax = m[i]
+            index = i
+    for i in range(index+1, n):
+        m[i] = float(0)
+    print(*m)
     
+n = int(input("Укажите размерность массива: "))
+funct(n)
+
