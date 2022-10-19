@@ -12,6 +12,6 @@ def funct(n):
         m[i] = float(0)
     print(*m)
     
-n = int(input("Укажите размерность массива: "))
+n = int(input("Укажите размерность массива > 0: "))
 funct(n)
 
