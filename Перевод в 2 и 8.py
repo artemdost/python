@@ -32,7 +32,7 @@ def translate(x, i):
     print("Число после перевода:", float(s))
         
     
-x = float(input("Введите число: "))
+x = float(input("Введите число в 10-ной системе счисления: "))
 n = int(input("Введите кол-во знаков после запятой: "))
 flag = 1
 while flag:
